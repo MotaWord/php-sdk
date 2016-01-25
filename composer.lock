@@ -1,0 +1,77 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "850f177191cf74e2d1aa559fa0f6e8b3",
+    "content-hash": "a469f22263ec6c72e6451cb65abec7bd",
+    "packages": [
+        {
+            "name": "apimatic/unirest-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apimatic/unirest-php.git",
+                "reference": "4deef6435ad57d1895bfba6039fa3cc78d269b78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apimatic/unirest-php/zipball/4deef6435ad57d1895bfba6039fa3cc78d269b78",
+                "reference": "4deef6435ad57d1895bfba6039fa3cc78d269b78",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.1.*",
+                "phpunit/phpunit": "~4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Unirest": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                "Mashape <opensource@mashape.com> (https://www.mashape.com)",
+                "APIMATIC <zeeshan@apimatic.io> (https://apimatic.io)"
+            ],
+            "description": "Unirest PHP",
+            "homepage": "https://github.com/apimatic/unirest-php",
+            "keywords": [
+                "client",
+                "curl",
+                "http",
+                "https",
+                "rest"
+            ],
+            "support": {
+                "email": "zeeshan@apimatic.io",
+                "source": "https://github.com/apimatic/unirest-php/tree/master"
+            },
+            "time": "2015-10-30 10:55:48"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "apimatic/unirest-php": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "platform-dev": []
+}

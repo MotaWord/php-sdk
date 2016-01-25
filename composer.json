@@ -1,0 +1,40 @@
+{
+    "name": "motaword/sdk",
+    "type": "library",
+    "description": "Use MotaWord API to post and track your translation projects.",
+    "keywords": ["MotaWord API","api","sdk", "translation", "localization", "automation", "human", "collaborative"],
+    "homepage": "https://www.motaword.com/developer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oytun Tez",
+            "email": "oytun@motaword.com",
+            "homepage": "https://github.com/oytuntez",
+            "role": "Developer"
+        },
+        {
+            "name": "Zeeshan @ APIMATIC",
+            "email": "zeeshan@apimatic.io",
+            "homepage": "https://github.com/apimatic",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/apimatic/unirest-php"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "apimatic/unirest-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "MotaWord\\": "src/"
+        }
+    }
+}
