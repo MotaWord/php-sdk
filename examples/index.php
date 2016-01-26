@@ -14,6 +14,7 @@ $projectsController = new MotaWord\Controllers\ProjectController();
 $documentController = new MotaWord\Controllers\DocumentController();
 $styleGuideController = new MotaWord\Controllers\StyleGuideController();
 $glossaryController = new MotaWord\Controllers\GlossaryController();
+$globalFileController = new MotaWord\Controllers\GlobalFileController();
 
 // Get meta information how file formats and languages we support. These language codes will be used when creating a project.
 $supportedFormats = $basic->getFormats();
@@ -72,6 +73,12 @@ if($isPackaged) {
 // This call will take longer than usual as it waits for packaging to be complete.
 $download = $projectsController->createPackage($project->id, null, 0);
 
+// Global style guide and glossary for corporate accounts
+$globalFileController->updateStyleGuide(realpath('./test_files/styleguide.pdf'));
+$globalFileController->updateGlossary(realpath('./test_files/glossary.xlsx'));
+$globalStyleGuide = $globalFileController->downloadStyleGuide();
+$globalGlossary = $globalFileController->downloadGlossary();
+
 // Let's see what kind of responses we received so far.
 var_dump($supportedFormats);
 var_dump($supportedLanguages);
@@ -84,3 +91,5 @@ var_dump($progress);
 var_dump($package);
 var_dump($packageStatus);
 var_dump($download);
+var_dump($globalStyleGuide);
+var_dump($globalGlossary);
