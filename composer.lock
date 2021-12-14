@@ -1,47 +1,57 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "850f177191cf74e2d1aa559fa0f6e8b3",
-    "content-hash": "a469f22263ec6c72e6451cb65abec7bd",
+    "content-hash": "fe83c9266d64c97cc004268bbb281111",
     "packages": [
         {
             "name": "apimatic/unirest-php",
-            "version": "dev-master",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apimatic/unirest-php.git",
-                "reference": "4deef6435ad57d1895bfba6039fa3cc78d269b78"
+                "reference": "e07351d5f70b445664e2dc4042bbc237ec7d4c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apimatic/unirest-php/zipball/4deef6435ad57d1895bfba6039fa3cc78d269b78",
-                "reference": "4deef6435ad57d1895bfba6039fa3cc78d269b78",
+                "url": "https://api.github.com/repos/apimatic/unirest-php/zipball/e07351d5f70b445664e2dc4042bbc237ec7d4c93",
+                "reference": "e07351d5f70b445664e2dc4042bbc237ec7d4c93",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.4.0"
+                "php": ">=5.6.0"
             },
             "require-dev": {
-                "codeclimate/php-test-reporter": "0.1.*",
-                "phpunit/phpunit": "~4.4"
+                "phpunit/phpunit": "^5 || ^6 || ^7 || ^8 || ^9"
+            },
+            "suggest": {
+                "ext-json": "Allows using JSON Bodies for sending and parsing requests"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Unirest": "src"
+                    "Unirest\\": "src/"
                 }
             },
             "license": [
                 "MIT"
             ],
             "authors": [
-                "Mashape <opensource@mashape.com> (https://www.mashape.com)",
-                "APIMATIC <zeeshan@apimatic.io> (https://apimatic.io)"
+                {
+                    "name": "Mashape",
+                    "email": "opensource@mashape.com",
+                    "homepage": "https://www.mashape.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "APIMATIC",
+                    "email": "opensource@apimatic.io",
+                    "homepage": "https://www.apimatic.io",
+                    "role": "Developer"
+                }
             ],
             "description": "Unirest PHP",
             "homepage": "https://github.com/apimatic/unirest-php",
@@ -53,25 +63,25 @@
                 "rest"
             ],
             "support": {
-                "email": "zeeshan@apimatic.io",
-                "source": "https://github.com/apimatic/unirest-php/tree/master"
+                "email": "opensource@apimatic.io",
+                "source": "https://github.com/apimatic/unirest-php/tree/2.1.0",
+                "issues": "https://github.com/apimatic/unirest-php/issues"
             },
-            "time": "2015-10-30 10:55:48"
+            "time": "2021-11-12T05:20:21+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "apimatic/unirest-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0",
+        "php": ">=5.6.0",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }

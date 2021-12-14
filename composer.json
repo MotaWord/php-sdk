@@ -7,9 +7,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Oytun Tez",
-            "email": "oytun@motaword.com",
-            "homepage": "https://github.com/oytuntez",
+            "name": "MotaWord Development",
+            "email": "it@motaword.com",
+            "homepage": "https://github.com/motaword",
             "role": "Developer"
         },
         {
@@ -26,11 +26,11 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.6.0",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "apimatic/unirest-php": "dev-master"
+        "apimatic/unirest-php": "^2.1"
     },
     "autoload": {
         "psr-4": {
