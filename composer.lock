@@ -4,36 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe83c9266d64c97cc004268bbb281111",
+    "content-hash": "392be164c349bf7edc0e8351b08fe3a6",
     "packages": [
         {
             "name": "apimatic/unirest-php",
-            "version": "2.1.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apimatic/unirest-php.git",
-                "reference": "e07351d5f70b445664e2dc4042bbc237ec7d4c93"
+                "reference": "ab48fe3322b275a27de3ff8d786be19d16fe01d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apimatic/unirest-php/zipball/e07351d5f70b445664e2dc4042bbc237ec7d4c93",
-                "reference": "e07351d5f70b445664e2dc4042bbc237ec7d4c93",
+                "url": "https://api.github.com/repos/apimatic/unirest-php/zipball/ab48fe3322b275a27de3ff8d786be19d16fe01d7",
+                "reference": "ab48fe3322b275a27de3ff8d786be19d16fe01d7",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
-                "php": ">=5.6.0"
+                "ext-json": "*",
+                "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5 || ^6 || ^7 || ^8 || ^9"
-            },
-            "suggest": {
-                "ext-json": "Allows using JSON Bodies for sending and parsing requests"
+                "codeclimate/php-test-reporter": "0.1.*",
+                "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Unirest\\": "src/"
+                    "Unirest": "src"
                 }
             },
             "license": [
@@ -49,7 +48,7 @@
                 {
                     "name": "APIMATIC",
                     "email": "opensource@apimatic.io",
-                    "homepage": "https://www.apimatic.io",
+                    "homepage": "https://apimatic.io",
                     "role": "Developer"
                 }
             ],
@@ -64,10 +63,10 @@
             ],
             "support": {
                 "email": "opensource@apimatic.io",
-                "source": "https://github.com/apimatic/unirest-php/tree/2.1.0",
+                "source": "https://github.com/apimatic/unirest-php/tree/1.3.1",
                 "issues": "https://github.com/apimatic/unirest-php/issues"
             },
-            "time": "2021-11-12T05:20:21+00:00"
+            "time": "2016-09-01T05:59:13+00:00"
         }
     ],
     "packages-dev": [],
